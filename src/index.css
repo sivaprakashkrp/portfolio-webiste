@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=VT323&display=swap');
+@import "tailwindcss";
+/* @import "tailwindcss/colors" */
+
+@theme {
+    --font-crt: "VT323", monospace;
+    --font-mono: "Cascadia Code", sans-serif;
+    --color-terminal: #00ff00;
+}
+
+::selection {
+    background-color: var(--color-terminal);
+    color: black;
+}
+
+html {
+    color-scheme: dark;
+    color: lime;
+	scroll-behavior: smooth;
+	width: 100%;
+    margin-inline: auto;
+	overflow-x: hidden;
+    cursor: default;
+}
+
+a, input {
+    cursor: none;
+}
+
+.section-heading {
+    @apply font-crt text-6xl px-2 font-bold my-5
+}
+
+.double-dashed-border {
+    padding: 15px;
+    border: 1px dashed lime;
+    outline: 1px dashed lime;
+    outline-offset: -5px;
+}
+
+.card-btn {
+	@apply font-mono text-center border border-dashed py-2 hover:bg-terminal hover:border-solid border-terminal hover:text-black transition-colors
+}
+
+.project-card-btn {
+	@apply w-1/2 
+}
+
+.tags {
+    @apply bg-terminal text-black px-2 py-1 font-medium rounded-xl me-2 my-1
+}
+
+.input-field {
+    caret-shape: underscore;
+    @apply border-2 border-terminal p-2 rounded-xl w-full text-terminal font-mono font-medium cursor-none caret-terminal active:border-terminal
+}
+
+
+.input-field-cont {
+    @apply  flex justify-center items-start flex-col p-2 font-mono w-4/5 
+}
+
+.social-cont {
+    @apply w-72 flex border-2 rounded-xl items-center justify-start gap-5 font-mono text-xl font-bold fill-black hover:bg-terminal hover:text-black transition-colors mx-auto md:mx-0
+}
+
+.social-cont-contents {
+    @apply w-full h-full rounded-xl flex items-center justify-start p-3 gap-5
+}
+
+.social-cont:hover svg path {
+    fill: black;
+}
+
+body {
+    cursor: none;
+}
+
+#inverted-cursor {
+    width: 15px;
+    height: 30px;
+    background-color: var(--color-terminal);
+    mix-blend-mode: difference;
+    position: fixed;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: width 0.1s, height 0.1s;
+}

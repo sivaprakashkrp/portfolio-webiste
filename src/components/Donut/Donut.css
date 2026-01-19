@@ -1,0 +1,23 @@
+.donut-frame {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donut-frame pre{
+    color: black;
+    position: absolute;
+    z-index: 0;
+    height: 450px;
+}
+
+#ascii {
+    display: 'none';
+    color: #00dd00;
+    font-style: mono;
+    font-family: "Cascadia Mono";
+}
