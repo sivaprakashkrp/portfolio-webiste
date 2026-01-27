@@ -5,6 +5,7 @@ import About from './About'
 import Projects from './Projects'
 import Certifications from './Certifications'
 import Contact from './Contact'
+import Footer from '../components/Footer'
 
 const Home = () => {
 
@@ -28,7 +29,8 @@ const Home = () => {
 				<Certifications />
 				<Contact />
 			</div>
-			<div id="inverted-cursor"></div>
+			<Footer />
+			<div id="inverted-cursor" className='hidden md:block'></div>
 		</React.Fragment>
 	)
 }

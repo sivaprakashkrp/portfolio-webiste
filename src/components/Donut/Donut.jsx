@@ -8,7 +8,7 @@ class Donut extends React.Component {
     render() {
         return (
             <div className="donut-frame">
-                <pre id='ascii' className='w-[400px] md:w-[600px] relative -left-24 md:left-auto'>
+                <pre id='ascii' className='w-[400px] md:w-[600px] relative -left-0 md:left-auto'>
                     {`
              k;double sin()
          ,cos();main(){float A=

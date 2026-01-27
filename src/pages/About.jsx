@@ -14,6 +14,7 @@ const About = () => {
                             -> A passionate Frontend Developer <br />
                             -> A learning backend developer <br />
                             -> A curious learner exploring the low level stuff of computers <br />
+                            -> An eager Rust learner, doing projects and learning more... <br />
                         </p>
                     </div>
                     <div className="donut-cont w-full md:w-1/2 h-100 text-[12px]">

@@ -6,16 +6,16 @@ export const navItems = [
             link: "/"
         }, {
             title: "About",
-            link: "/"
+            link: "#about"
         }, {
             title: "Projects",
-            link: "/"
+            link: "#projects"
         }, {
             title: "Certification",
-            link: "/"
+            link: "#certifications"
         }, {
             title: "Contact",
-            link: "/"
+            link: "#contact"
         }
     ]
 
@@ -37,20 +37,28 @@ export const projects = [
         code: "https://github.com/JusstTamil/JUSSTWebsite3.0"
     },
     {
+        id: 4,
+        title: "btrls",
+        description: "A Tabled ls command with JSON export of details of files in a directory.",
+        tech_used: ["Rust"],
+        url: "https://github.com/sivaprakashkrp/btrls/releases/latest",
+        code: "https://github.com/sivaprakashkrp/btrls"
+    },
+    {
+        id: 5,
+        title: "ebod",
+        description: "A command-line utility that makes the process of local manual backups easy and efficient.",
+        tech_used: ["Rust"],
+        url: "https://github.com/sivaprakashkrp/ebod",
+        code: "https://github.com/sivaprakashkrp/ebod"
+    },
+    {
         id: 3,
         title: "OSDAG Installer for Windows",
         description: "A simple Powershell Script installer for the OSDAG Application",
         tech_used: ["PowerShell Scripts"],
         url: "",
         code: "https://github.com/sivaprakashkrp/OSDAG-Installer-for-Windows"
-    },
-    {
-        id: 4,
-        title: "btrls",
-        description: "A Tabled ls command with JSON export of files in a directory.",
-        tech_used: ["Rust"],
-        url: "https://github.com/sivaprakashkrp/btrls/releases/tag/v1.1.1",
-        code: "https://github.com/sivaprakashkrp/btrls"
     },
 ]
 

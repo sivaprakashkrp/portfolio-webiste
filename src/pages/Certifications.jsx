@@ -4,11 +4,13 @@ import { certifications } from '../constants'
 const Certifications = () => {
     return (
         <React.Fragment>
-			<h2 className="section-heading">Certifications.</h2>
-			<div className="certs-cont md:grid grid-cols-2 md:w-3/4 mx-auto gap-10 flex justify-center flex-col md:py-10 px-5">
-				{certifications.map((certification) => (
-					<CertificationCard key={certification.id} {...certification} />
-				))}
+			<div id="certifications" className='mb-10'>
+				<h2 className="section-heading">Certifications.</h2>
+				<div className="certs-cont md:grid grid-cols-2 md:w-3/4 mx-auto gap-10 flex justify-center flex-col md:py-10 px-5">
+					{certifications.map((certification) => (
+						<CertificationCard key={certification.id} {...certification} />
+					))}
+				</div>
 			</div>
         </React.Fragment>
     )
