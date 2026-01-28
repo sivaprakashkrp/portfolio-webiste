@@ -45,12 +45,11 @@ const BigScreenNavList = () => {
 
 const SmallScreenNavMenu = () => {
 	const [menuVisibility, setMenuVisibility] = useState(false);
-	console.log(menuVisibility)
 	return (
 		<React.Fragment>
 			<button className="text-2xl font-black me-5" onClick={() => setMenuVisibility(!menuVisibility)}>☰</button>
 			{menuVisibility && (
-				<div className="flex flex-col items-center justify-start p-2 md:hidden bg-black double-dashed-border absolute text-terminal right-5 my-3 p-3">
+				<div className="flex flex-col items-center justify-start md:hidden bg-black double-dashed-border absolute text-terminal right-5 my-3 p-3">
 					<NavLinkList />
 				</div>
 			)}

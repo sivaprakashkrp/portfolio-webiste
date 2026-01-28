@@ -31,6 +31,14 @@ a, input {
     @apply font-crt text-6xl px-2 font-bold my-5
 }
 
+.about-block {
+    @apply border-2 border-terminal p-3 rounded-xl relative
+}
+
+.about-block:hover .cover {
+    @apply opacity-0
+}
+
 .double-dashed-border {
     padding: 15px;
     border: 1px dashed lime;
@@ -65,11 +73,11 @@ a, input {
 }
 
 .social-cont {
-    @apply w-72 flex border-2 rounded-xl items-center justify-start gap-5 font-mono text-xl font-bold fill-black hover:bg-terminal hover:text-black transition-colors mx-auto md:mx-0
+    @apply w-72 md:w-auto flex border-2 rounded-xl items-center justify-start gap-5 font-mono text-xl font-bold fill-black hover:bg-terminal hover:text-black transition-colors mx-auto md:mx-0
 }
 
 .social-cont-contents {
-    @apply w-full h-full rounded-xl flex items-center justify-start p-3 gap-5
+    @apply w-full h-full rounded-xl flex items-center justify-start p-3 gap-5 md:flex-col
 }
 
 .social-cont:hover svg path {
