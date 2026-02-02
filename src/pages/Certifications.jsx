@@ -21,7 +21,7 @@ const CertificationCard = ({ id, title, provider, skills, url }) => {
 		<div className="cert-card double-dashed-border flex flex-col gap-2 justify-between">
 			<h3 className="font-crt text-3xl font-bold">{title}</h3>
 			<p className="font-mono text-xl font-semibold">From: {provider}</p>
-			<div className="skills-cont flex flex-wrap items-center">
+			<div className="skills-cont flex flex-wrap items-center font-mono">
 				{skills.map((skill) => (
 					<p className="tags">{skill}</p>
 				))}

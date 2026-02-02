@@ -35,7 +35,7 @@ const Contact = () => {
 								<label htmlFor="message">Your Message</label>
 								<textarea name="message" id="message" cols="30" rows="5" className='input-field input-field-message'></textarea>
 							</div>
-							<button type='submit' className="submit-btn px-3 py-2 rounded-xl bg-terminal text-black font-mono font-semibold">Submit</button>
+							<button type='submit' className="submit-btn px-3 py-2 rounded-xl bg-terminal text-black font-mono font-semibold pointer-events-none">Submit</button>
 						</form>
 					</div>
 				</div>

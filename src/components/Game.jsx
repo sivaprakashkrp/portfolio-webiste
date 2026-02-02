@@ -12,7 +12,7 @@ const Game = ({ onClose }) => {
         const height = canvas.height = window.innerHeight;
 
         // Player constrained to bottom
-        let player = { x: width / 2, y: height - 50, size: 20, speed: 7 };
+        let player = { x: width / 2, y: height - 50, size: 30, speed: 7 };
         let bullets = [];
         let enemies = [];
         let keys = {};
@@ -30,10 +30,10 @@ const Game = ({ onClose }) => {
 
         const spawnEnemy = () => {
             if (!gameRunning) return;
-            const size = 30;
+            const size = 40;
             const x = Math.random() * (width - size);
             enemies.push({ x, y: -size, size, speed: 3 + Math.random() * 3 });
-            setTimeout(spawnEnemy, 800);
+            setTimeout(spawnEnemy, 1000);
         };
         setTimeout(spawnEnemy, 1000);
 
@@ -52,7 +52,7 @@ const Game = ({ onClose }) => {
                         y: player.y,
                         width: 4,
                         height: 15, // Longer bullets for "stream" effect
-                        speed: 10
+                        speed: 8
                     });
                     lastShotTime = timestamp;
                 }
@@ -109,7 +109,7 @@ const Game = ({ onClose }) => {
             ctx.fillRect(0, 0, width, height);
 
             // Draw Stars background
-            ctx.fillStyle = '#ffffff';
+            ctx.fillStyle = '#0f0';
             for (let i = 0; i < 5; i++) {
                 ctx.fillRect(Math.random() * width, Math.random() * height, 2, 2);
             }
@@ -127,7 +127,7 @@ const Game = ({ onClose }) => {
             bullets.forEach(b => ctx.fillRect(b.x, b.y, b.width, b.height));
 
             // Enemies
-            ctx.fillStyle = 'red';
+            ctx.fillStyle = 'lime';
             enemies.forEach(e => ctx.fillRect(e.x, e.y, e.size, e.size));
         };
 
@@ -147,17 +147,17 @@ const Game = ({ onClose }) => {
             <div className="absolute top-4 left-4 text-green-400 font-mono text-xl pointer-events-none">
                 SCORE: {score}
             </div>
-            <button onClose={onClose} onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-white font-mono z-50 p-2 bg-gray-900 border border-gray-700 rounded cursor-pointer">
+            <button onClose={onClose} onClick={onClose} className="absolute top-4 right-4 text-terminal font-mono z-50 p-2 bg-black border border-terminal rounded cursor-pointer">
                 QUIT (ESC)
             </button>
             {gameOver && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 text-red-500 font-mono cursor-default">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 text-terminal font-mono cursor-default">
                     <h1 className="text-6xl font-bold mb-4">GAME OVER</h1>
                     <p className="text-2xl mb-8">Final Score: {score}</p>
-                    <button onClick={onClose} className="border border-red-500 px-6 py-2 text-red-500 hover:bg-red-500 hover:text-black transition-colors cursor-pointer">
+                    <button onClick={onClose} className="border border-terminal px-6 py-2 text-terminal hover:bg-terminal hover:text-black transition-colors cursor-pointer">
                         EXIT SECTOR
                     </button>
-                    <p className="mt-4 text-gray-500 text-sm">Refresh to play again</p>
+                    <p className="mt-4 text-terminal text-sm">Come Back another day...</p>
                 </div>
             )}
         </div>

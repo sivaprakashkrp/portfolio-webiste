@@ -13,10 +13,10 @@ const HelpDialog = ({ onClose }) => {
                         <span>Navigation</span>
                         <span className="text-terminal font-bold">j / k</span>
                     </div>
-                    <div className="flex justify-between pb-2">
+                    {/* <div className="flex justify-between pb-2">
                         <span>Side Navigation</span>
                         <span className="text-terminal font-bold">h / l</span>
-                    </div>
+                    </div> */}
                     <div className="flex justify-between pb-2">
                         <span>Kill Site</span>
                         <span className="text-terminal font-bold">Ctrl + C</span>

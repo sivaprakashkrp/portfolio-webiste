@@ -6,6 +6,7 @@ import Projects from './Projects'
 import Certifications from './Certifications'
 import Contact from './Contact'
 import Footer from '../components/Footer'
+import HelpShortcutTag from '../components/HelpShortcutTag'
 
 const Home = () => {
 
@@ -29,6 +30,7 @@ const Home = () => {
 				<Certifications />
 				<Contact />
 			</div>
+			<HelpShortcutTag />
 			<Footer />
 			<div id="inverted-cursor" className='hidden md:block'></div>
 		</React.Fragment>

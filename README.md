@@ -11,7 +11,7 @@ It is a CLI-themed portfolio webiste. The terminal design of the old days is wha
 
 ## Usage of AI
 
-For the keyboard shortcuts and the basic version of the space shooter game. Further developed by myself.
+AI generated code was used for the keyboard shortcuts, space shooter game and the cmatrix running behind the homepage. Further modified by myself.
 
 ---
 

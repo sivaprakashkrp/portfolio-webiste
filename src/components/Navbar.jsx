@@ -23,7 +23,7 @@ const Navbar = () => {
   });
 	return (
 		<React.Fragment>
-			<nav className='h-[10vh] w-full p-3'>
+			<nav className='h-[10vh] w-full p-3 bg-black'>
 				<div className="border-2 border-terminal rounded-xl p-2 flex justify-between md:justify-center items-center">
 					<div className="left font-crt font-bold text-3xl px-6">Sivaprakash</div>
 					<div className="right">
@@ -37,7 +37,7 @@ const Navbar = () => {
 
 const BigScreenNavList = () => {
 	return (
-		<div className={`right font-mono gap-4 justify-around items-center hidden md:flex`}>
+		<div className={`right font-mono gap-4 justify-around items-center hidden md:flex bg-black`}>
 			<NavLinkList />
 		</div>
 	)
@@ -47,9 +47,9 @@ const SmallScreenNavMenu = () => {
 	const [menuVisibility, setMenuVisibility] = useState(false);
 	return (
 		<React.Fragment>
-			<button className="text-2xl font-black me-5" onClick={() => setMenuVisibility(!menuVisibility)}>☰</button>
+			<button className="text-2xl font-black me-5 font-mono text-terminal" onClick={() => setMenuVisibility(!menuVisibility)}>{menuVisibility ? "🗙" : "☰"}</button>
 			{menuVisibility && (
-				<div className="flex flex-col items-center justify-start md:hidden bg-black double-dashed-border absolute text-terminal right-5 my-3 p-3">
+				<div className="flex flex-col items-center justify-start md:hidden bg-black double-dashed-border absolute text-terminal right-5 my-3 p-3 z-2">
 					<NavLinkList />
 				</div>
 			)}
