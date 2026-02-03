@@ -13,6 +13,14 @@ const HelpDialog = ({ onClose }) => {
                         <span>Navigation</span>
                         <span className="text-terminal font-bold">j / k</span>
                     </div>
+                    <div className="flex justify-between pb-2">
+                        <span>Game Navigation</span>
+                        <span className="text-terminal font-bold">a, d</span>
+                    </div>
+                    <div className="flex justify-between pb-2">
+                        <span>Shooting in Game</span>
+                        <span className="text-terminal font-bold">Space / Shoot</span>
+                    </div>
                     {/* <div className="flex justify-between pb-2">
                         <span>Side Navigation</span>
                         <span className="text-terminal font-bold">h / l</span>

@@ -12,8 +12,8 @@ const About = () => {
                             <div className="about-header text-2xl md:text-3xl text-center w-full mt-4 mb-8">Hello There! This is Sivaprakash</div>
                             <div className="about-block-wrapper grid md:flex grid-cols-2 gap-5 text-center min-h-72">
                                 <div className="about-block col-span-2"><AboutBlock msg="A Computer Science Student at Thiagarajar College of Engineering" /></div>
-                                <div className="about-block"><AboutBlock msg="A passionate Frontend Developer" /></div>
-                                <div className="about-block"><AboutBlock msg="A learning backend developer" /></div>
+                                <div className="about-block"><AboutBlock msg="A Passionate Frontend Developer" /></div>
+                                <div className="about-block"><AboutBlock msg="A Learning Backend Developer" /></div>
                                 <div className="about-block col-span-2"><AboutBlock msg="A curious learner exploring the low level stuff of computers" /></div>
                                 <div className="about-block col-span-2"><AboutBlock msg="An eager Rust learner, doing projects and learning more..." /></div>
                             </div>

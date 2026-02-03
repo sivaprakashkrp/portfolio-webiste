@@ -43,7 +43,7 @@ const Cmatrix = ({classlist}) => {
     return () => clearInterval(intervalId); // Cleanup
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: 'absolute' }} className={classlist} />;
+  return <canvas ref={canvasRef} style={{ display: 'absolute' }} className={`cmatrix-render ${classlist}`} />;
 };
 
 export default Cmatrix;

@@ -20,6 +20,7 @@ const Contact = () => {
 							))}
 						</div>
 					</div>
+					{/* !TODO: Add FormSubmit link to contact form */}
 					<div className="">
 						<h3 className="font-mono text-2xl md:text-3xl text-center mb-5"> ~ Or Send a Message ~ </h3>
 						<form action="" className='double-dashed-border flex flex-col items-center justify-around'>
@@ -35,7 +36,7 @@ const Contact = () => {
 								<label htmlFor="message">Your Message</label>
 								<textarea name="message" id="message" cols="30" rows="5" className='input-field input-field-message'></textarea>
 							</div>
-							<button type='submit' className="submit-btn px-3 py-2 rounded-xl bg-terminal text-black font-mono font-semibold pointer-events-none">Submit</button>
+							<button type='submit' className="submit-btn px-3 py-2 rounded-xl bg-terminal text-black hover:bg-black hover:text-terminal border-2 border-terminal font-mono font-semibold cursor-none">Submit</button>
 						</form>
 					</div>
 				</div>
