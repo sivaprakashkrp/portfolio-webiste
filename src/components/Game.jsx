@@ -147,14 +147,14 @@ const Game = ({ onClose }) => {
             <div className="absolute top-4 left-4 text-green-400 font-mono text-xl pointer-events-none">
                 SCORE: {score}
             </div>
-            <button onClose={onClose} onClick={onClose} className="absolute top-4 right-4 text-terminal font-mono z-50 p-2 bg-black border border-terminal rounded cursor-pointer">
+            <button onClose={onClose} onClick={onClose} className="absolute top-4 right-4 text-terminal font-mono z-50 p-2 bg-black border border-terminal rounded cursor-none">
                 QUIT (ESC)
             </button>
             {gameOver && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/80 text-terminal font-mono cursor-default">
                     <h1 className="text-6xl font-bold mb-4">GAME OVER</h1>
                     <p className="text-2xl mb-8">Final Score: {score}</p>
-                    <button onClick={onClose} className="border border-terminal px-6 py-2 text-terminal hover:bg-terminal hover:text-black transition-colors cursor-pointer">
+                    <button onClick={onClose} className="border border-terminal px-6 py-2 text-terminal hover:bg-terminal hover:text-black transition-colors cursor-none">
                         EXIT SECTOR
                     </button>
                     <p className="mt-4 text-terminal text-sm">Come Back another day...</p>

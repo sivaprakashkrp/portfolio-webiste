@@ -57,7 +57,7 @@ export const projects = [
         title: "OSDAG Installer for Windows",
         description: "A simple Powershell Script installer for the OSDAG Application",
         tech_used: ["PowerShell Scripts"],
-        url: "",
+        url: "https://github.com/sivaprakashkrp/OSDAG-Installer-for-Windows",
         code: "https://github.com/sivaprakashkrp/OSDAG-Installer-for-Windows"
     },
 ]
