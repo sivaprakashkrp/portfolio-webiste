@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!!</title>
+    <!-- Author -->
+    <meta name="author" content="Sivaprakash P" />
+    <!-- Website Theme -->
+    <meta name="theme-color" content="#000000" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=VT323&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #000;
+            color: lime;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: "VT323", monospace;
+            font-size: 80px;
+        }
+
+        h3 {
+            font-family: "Cascadia Code", monospace;
+            font-size: 20px;
+            width: 80%;
+            margin-inline: auto;
+        }
+
+        a {
+            background-color: lime;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: "Cascadia Code", monospace;
+            text-decoration: none;
+            border: 2px lime solid;
+            transition: all 0.4s ease;
+        }
+
+        a:hover {
+            background-color: black;
+            color: lime;
+        }
+
+        #inverted-cursor-thx {
+            display: none;
+            width: 15px;
+            height: 30px;
+            background-color: var(--color-terminal);
+            mix-blend-mode: difference;
+            position: fixed;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: width 0.1s, height 0.1s;
+        }
+
+        @media (min-width: 769px) {
+            #inverted-cursor-thx {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thank You</h1>
+    <h3>I will get back to your message as soon as possible</h3>
+    <a href="/" class="">Go back to home</a>
+    <div id="inverted-cursor-thx"></div>
+    <script>
+        const cursor = document.getElementById('inverted-cursor-thx');
+
+        document.addEventListener('mousemove', (e) => {
+            // Move the div to the mouse location
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+
+</html>
