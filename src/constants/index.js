@@ -125,7 +125,7 @@ export const socials = [
         id: 3,
         name: "LinkedIn",
         logo: linkedin,
-        url: "https://www.linkedin.com/in/sivaprakash-p-a4310338a/"
+        url: "https://www.linkedin.com/in/sivaprakashkrp/"
     },
     {
         id: 4,
